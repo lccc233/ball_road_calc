@@ -1,0 +1,6 @@
+<launch>
+	<param name="rcd_path" value="$(find ball_road)/../../../../video_rcd/"/>
+	<param name="result_path" value="$(find ball_road)/../../../../ball_result/"/>
+	<param name="now_work" value="/hero/0.mp4"/>
+	<node pkg="ball_road" name="ball_road" type="ball_road_node" output="screen" />
+</launch>

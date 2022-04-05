@@ -1,0 +1,6 @@
+<launch>
+	<param name="rcd_path" value="$(find mark)/../../../../video_rcd/"/>
+	<rosparam command="load" file="$(find mark)/../cfg/cfg.yaml" />
+	<node pkg="cam" name="cam_node" type="cam_node" output="screen" />
+	<node pkg="mark" name="mark" type="mark_node" output="screen" />
+</launch>

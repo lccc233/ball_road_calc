@@ -1,0 +1,6 @@
+<launch>
+	<param name="img_path" value="$(find mark)/../../../../img/"/>
+	<rosparam command="load" file="$(find mark)/../cfg/cfg.yaml" />
+	<node pkg="cam" name="cam_node" type="cam_node" output="screen" />
+	<node pkg="get_img" name="get_img_node" type="get_img_node" output="screen" />
+</launch>
